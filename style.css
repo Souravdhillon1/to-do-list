@@ -1,0 +1,174 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing:border-box;
+}
+
+.upper{
+  width:100%;
+
+
+}
+.links{
+
+  font-size:14px;
+  margin-left: 90%;
+  cursor:pointer;
+ 
+ 
+
+}
+
+.links a {
+ text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-left: 20px;
+  cursor: pointer;
+ 
+}
+.links a:hover{
+
+  font-size: 16px;
+
+}
+
+.con {
+  width:100%;
+  margin-top: 0;
+  min-height: 100vh;
+   background-color: rgb(115, 167, 196);
+   padding: 10px;
+  }
+  .todo-app{
+      width:100%;
+      max-width: 540px;
+      background: #fff;
+      margin: 90px auto 20px;
+      padding:40px 30px 70px ;
+      border-radius: 20px;
+  }
+.todo-app h2{
+color: #1a036b;
+display:flex;
+align-items:center;
+margin-bottom:20px;
+}
+.todo-app h2 img{
+  width:50px;
+  margin-left: 20px;
+
+}
+.row{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  background:#edeef0 ;
+  border-radius:30px ;
+  padding-left:20px ;
+  margin: bottom 10px;
+}
+input{
+  flex:1;
+  border:none;
+  outline:none;
+  background:transparent ;
+  padding:10px;
+  font: weight 20px;
+}
+button{
+
+  border:none;
+  outline:none;
+  padding:16px 50px;
+  background-color: rgb(129, 217, 233);
+  font-size:16px;
+  border-radius: 30px;
+  cursor:pointer;
+
+
+
+
+}
+ul li{
+  margin-top: 20px;
+  list-style:none;
+  font-size:17px;
+  padding:12px 4px 10px;
+  user-select:none;
+  cursor:pointer;
+  position:relative;
+  
+}
+ul li::before{
+  content:'';
+  position:absolute;
+  height:28px;
+  width:28px;
+
+  background-image: url(images/unchecked-checkbox-561685.jpg);
+  background-size: cover;
+  background-position: center;
+  top:11px;
+  left:66px;
+
+
+}
+ul li.checked{
+  color:#555;
+  text-decoration: line-through;}
+ 
+  ul li.checked::before{
+  background-image: url(images/icon-checked-7.jpg);
+
+}
+/* Hide the div initially */
+.hidden {
+  display: none;
+}
+
+/* Style the "hurray" GIF container */
+#hurrayGif {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+/* Style the "hurray" GIF image */
+#hurrayGif img {
+  /* Set width and height to make the GIF smaller */
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+width:220vh;
+min-height: 100vh;
+  opacity: 0.4;
+}
+
+
+
+ul li span{
+  position:absolute;
+  right:0;
+  top:5px;
+  width:40px;
+  height :40px;
+  font-size: 22px;
+  color:#555;
+  line-height:40 px;
+  text-align: center;
+}
+
+ul li input{
+    /* Customize the appearance of the checkbox */
+    width: 20px;
+    height: 20px;
+
+ 
+ 
+    display:block;
+
+}

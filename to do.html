@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="con">
+
+    <div class="upper">
+      <button id="focus-button" onclick="toggleFocusMode()">Focus Mode </button>
+      <button id="disable-button" onclick="toggleDisableMode()">Disable (Off)</button>
+    </div>
+    <div class="todo-app">
+  
+      <h2> To-Do List <img src="images/todo1.jpg" alt="icon"> </h2>
+      <div class="row">
+        <input type="text" id="input-box" placeholder="Enter the task">
+
+        <button onclick="addTask()">Add</button>
+        <div id="hurrayGif" class="hidden">
+          <img src="images/37c6abb8b635b99ac322143ca545b7bf.jpg" alt="Hurray GIF">
+        </div>
+
+        </div>
+      <ul id="list-container">
+      </ul> 
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
